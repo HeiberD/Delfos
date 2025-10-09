@@ -1,4 +1,7 @@
 @import url(./normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /*Titulos de color negro*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /*titulos naranjas*/
+
 
 /* Variables globales */
 
@@ -7,7 +10,14 @@
     --over-font-size:62.5%;
 
     /* Colores base */
-    --Islamic-Green: #04B90B;
+    --Orange-Yellow:#F4B527;
+    --Maximun-Red: #D12420;
+    --Navy-Blue: #09097C;
+    --Raisin-Black: #212121; /*Background copyrigth y testimonials*/
+    --Lotion: #fcfcfd; /*Body*/
+    --Anti-Flash-White: #F3F3F3; /*Background our service*/
+    --Raisin-Black: #222222; /*Background footer principal*/
+    --Charleston-Green: #2b2b2b; /*Background testimonials y subscribe*/
 }
 
 
