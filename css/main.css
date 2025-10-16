@@ -11,6 +11,7 @@
 
     /* Colores base */
     --Orange-Yellow:#F4B527;
+    --Halloween-Orange: #F26723;
     --Maximun-Red: #D12420;
     --Navy-Blue: #09097C;
     --Raisin-Black: #212121; /*Background copyrigth y testimonials*/
@@ -67,12 +68,12 @@ div {
   /* background-color: white; */
 
   /* El gradiente con el ángulo perfecto */
-  background: linear-gradient(-135deg, #f26723 100%, transparent 0% );
+  background: linear-gradient(-135deg, var(--Halloween-Orange) 100%, transparent 0% );
   /* El gradiente tiene un ángulo de -135 grados, lo que significa que se va a dibujar desde arriba hacia abajo y desde la izquierda hacia la derecha. */
   /* El gradiente empieza con el color var(--Orange-Yellow) en la posición 70% */
   /* A partir de la posición 0%, el gradiente es transparente */
   
-  border-top: #f26723 .5rem solid;
+  border-top: var(--Halloween-Orange) .5rem solid;
   /* color: white; */
   height: 2rem;
   /* min-height: 2rem; */
@@ -170,13 +171,17 @@ div {
 }
 
 .header-menu a:hover {
-    color: #f26723;
+    color: var(--Halloween-Orange);
 }
 
 /* Main */
 .main {
     flex: 1; /*Es equivalente a 1 0 auto*/
 }
+
+/* Carousel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
 
 /* Aside */
 
@@ -224,12 +229,12 @@ div {
   /* background-color: white; */
 
   /* El gradiente con el ángulo perfecto */
-  background: linear-gradient(-135deg, #f26723 70%, transparent 0% );
+  background: linear-gradient(-135deg, var(--Halloween-Orange) 70%, transparent 0% );
   /* El gradiente tiene un ángulo de -135 grados, lo que significa que se va a dibujar desde arriba hacia abajo y desde la izquierda hacia la derecha. */
   /* El gradiente empieza con el color var(--Orange-Yellow) en la posición 70% */
   /* A partir de la posición 0%, el gradiente es transparente */
   
-  border-top: #f26723 .5rem solid;
+  border-top: var(--Halloween-Orange) .5rem solid;
   /* color: white; */
   height: 2rem;
   /* min-height: 2rem; */
@@ -323,7 +328,7 @@ div {
 }
 
 .header-menu a:hover {
-    color: #f26723;
+    color: var(--Halloween-Orange);
 }
 
     /* Main */
