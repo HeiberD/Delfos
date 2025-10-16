@@ -6,6 +6,18 @@
     box-sizing: border-box;
     overflow-x: scroll;
 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &::scroll-button(right){
+        content: "right";
+    }
+
+    &::scroll-button(left){
+        content: "left";
+    }
+
     /*.carousel .card*/
     .card {
         height: 12em;
