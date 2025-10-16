@@ -1,6 +1,22 @@
-
 .carousel {
     display: flex;
     gap: 1em;
     margin: 3em auto;
+    border: 2px dotted green;
+    box-sizing: border-box;
+    overflow-x: scroll;
+
+    /*.carousel .card*/
+    .card {
+        height: 12em;
+        border: 1px dotted red;
+        box-sizing: border-box;
+        background-color: blueviolet;
+        padding: 1em;
+        border-radius: .5rem;
+        align-content: center;
+        text-align: center;
+        flex: 0 0 20em;
+    }
 }
+
