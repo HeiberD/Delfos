@@ -7,6 +7,7 @@
     overflow-x: scroll;
     scroll-behavior: smooth; /*No lfunciona el scroll suave*/
     /* width:100%; */
+    anchor-name: --carousel;
 
     &::-webkit-scrollbar {
         display: none;
@@ -14,10 +15,14 @@
 
     &::scroll-button(right){
         content: "⭢";
+        position-area: right center;
+        translate: -50%;
     }
 
     &::scroll-button(left){
         content: "⭠";
+        position-area: left center;
+        translate: 50%;
     }
 
     &::scroll-button(right),
@@ -35,6 +40,10 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
+
+        position: fixed;
+        position-anchor: --carousel;
+        
         
         /* === OPCIONAL: Mejor apariencia === */
         /* line-height: 1;
@@ -60,4 +69,3 @@
         text-align: center;
     }
 }
-
