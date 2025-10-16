@@ -1,34 +1,63 @@
 .carousel {
+    /* border: 2px dotted green; */
+    box-sizing: border-box;
     display: flex;
     gap: 1em;
     margin: 3em auto;
-    border: 2px dotted green;
-    box-sizing: border-box;
     overflow-x: scroll;
+    scroll-behavior: smooth; /*No lfunciona el scroll suave*/
+    /* width:100%; */
 
     &::-webkit-scrollbar {
         display: none;
     }
 
     &::scroll-button(right){
-        content: "right";
+        content: "⭢";
     }
 
     &::scroll-button(left){
-        content: "left";
+        content: "⭠";
+    }
+
+    &::scroll-button(right),
+    &::scroll-button(left) {
+        cursor: pointer;
+        background-color: blueviolet;
+        font-size: 1.4em;
+        color: white;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        padding: .8em;
+
+         /* === CENTRADO PERFECTO === */
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        
+        /* === OPCIONAL: Mejor apariencia === */
+        /* line-height: 1;
+        text-align: center; */
+    }
+
+    &::scroll-button(right):disabled,
+    &::scroll-button(left):disabled {
+        opacity: .5;
+        cursor: auto;
     }
 
     /*.carousel .card*/
     .card {
-        height: 12em;
         border: 1px dotted red;
-        box-sizing: border-box;
-        background-color: blueviolet;
-        padding: 1em;
-        border-radius: .5rem;
         align-content: center;
-        text-align: center;
+        background-color: blueviolet;
+        border-radius: .5rem;
+        box-sizing: border-box;
         flex: 0 0 20em;
+        height: 12em;
+        padding: 1em;
+        text-align: center;
     }
 }
 
