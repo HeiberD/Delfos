@@ -8,6 +8,7 @@
     scroll-behavior: smooth; /*No lfunciona el scroll suave*/
     /* width:100%; */
     anchor-name: --carousel;
+    scroll-snap-type: x mandatory;
 
     &::-webkit-scrollbar {
         display: none;
@@ -58,14 +59,15 @@
 
     /*.carousel .card*/
     .card {
-        border: 1px dotted red;
         align-content: center;
         background-color: blueviolet;
         border-radius: .5rem;
+        border: 1px dotted red;
         box-sizing: border-box;
         flex: 0 0 20em;
         height: 12em;
         padding: 1em;
+        scroll-snap-align: start;
         text-align: center;
     }
 }
