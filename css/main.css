@@ -117,7 +117,7 @@ div {
 /* Para el contenido del header */
 .header-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: "Roboto", sans-serif;
     font-size: 1.4rem;
 }
@@ -181,7 +181,72 @@ div {
 
 /* Carousel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
+.slide-content {
+      max-width: 650px;
+      padding: 50px 40px;
+      background: rgba(0,0,0,0.15);
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.1);
+      animation: slideInLeft 1s ease-out;
+    }
 
+    .slide-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 1.8rem;
+      line-height: 1.1;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    }
+
+    .slide-text {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+      font-weight: 400;
+    }
+
+    .slide-btn {
+      background: linear-gradient(45deg, #FF4500, #FF6B35);
+      color: white;
+      border: none;
+      padding: 18px 40px;
+      font-size: 1.1rem;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 6px 20px rgba(255,69,0,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255,69,0,0.5);
+    }
+
+    .slide-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .slide-btn:hover::before {
+      left: 100%;
+    }
 
 /* Aside */
 
