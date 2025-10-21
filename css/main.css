@@ -226,12 +226,6 @@ h3 {
 }
 
 
-.links-card-2 i.fa-solid.fa-lock {    
-    margin-right: 0.5rem;
-}
-
-
-
 .footer-card-3 ul li a {
     color: var(--Dim-Gray);
     font-family: "Roboto", sans-serif;
@@ -277,13 +271,22 @@ h3 {
 
 /* Media quieries break-point*****************************************************************************************************/
 @media (width > 567px) {
-    .container {
-        max-width: 54rem;
-        padding: 0 1.6rem;  /*Maneja la distancia entre el contenido y el borde del contenedor e incrementa en 8px en cada media query*/
-    }
+.container {
+    max-width: 54rem;
+    padding: 0 1.6rem;  /*Maneja la distancia entre el contenido y el borde del contenedor e incrementa en 8px en cada media query*/
+}
     /* Header */
     /* Main */
     /* Aside */
+
+
+ /*main feature-news-various*/
+.links-card-2 i.fa-solid.fa-lock {
+    margin-left: 0.4rem;
+    margin-right: 0.2rem;
+}
+
+
 
     /* Footer */
     .sections-footer {
