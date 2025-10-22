@@ -19,6 +19,7 @@
     --Anti-Flash-White: #F3F3F3; /*Background our service*/
     --Raisin-Black: #222222; /*Background footer principal*/
     --Charleston-Green: #2b2b2b; /*Background testimonials y subscribe*/
+    --Dim-Gray: #636C72; /*Color letra footer*/
 }
 
 
@@ -38,7 +39,6 @@ body {
     flex-direction: column; 
     font-size: 1.6rem; /*todas las fuentes en base 10*/
     background-color: white;
-    
 }
 
 .container {
@@ -46,8 +46,7 @@ body {
     box-sizing: border-box;  /**Para bordes internos al elemento**/
     margin: 0 auto;          /**Centra el elemento**/
     max-width: 96vw;         /**Ancho maximo**/
-    padding: 0 .8rem;        /**Distancia entre el contenido y el borde**/
-    
+    padding: 0 .8rem;        /**Distancia entre el contenido y el borde**/    
 }
 
 .container-fluid {
@@ -158,16 +157,161 @@ div {
     flex: 1; /*Es equivalente a 1 0 auto*/
 }
 
+
 /* Carousel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     /* carousel.css */
 
+/*pre-footer*/
+
+.banner {
+    width: 100%;
+    /* height: 11rem;    */
+    background: var(--Halloween-Orange);
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.banner-content {
+    display: flex;    
+    align-items: center;
+    height: 12rem;
+    flex-direction: column;
+}
+
+.btn {
+    background: var(--Raisin-Black);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 14px;
+    text-decoration: none;    
+    font-family: "Oswald", sans-serif;
+}
+
+.btn:hover{
+    background-color: var(--Dim-Gray);
+    transition: all 1s;
+    }
+
+.btn i.fa-regular.fa-file-pdf { /*Logo pdf*/
+    margin-right: 1rem;
+    font-size: 1.8rem;         /*Altura de la imagen logo pdf*/
+    }
+
+.btn i.fa-solid.fa-circle-down {
+    margin-left: 0.8rem;
+}
+
+.banner-content p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.pre-footer {
+    border-bottom: 3px solid var(--Halloween-Orange); /*borde naranja a la seccion pre-footer*/
+}
+
 /* Aside */
 
-/* Footer */
+/* Footer ******************/
+
+.footer__background {
+    background-color:var(--Raisin-Black);
+    
+}
+
+.sections-footer {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 1rem;  
+    margin: 3rem 0;      
+}
+
+.col {
+    border: dotted blueviolet;
+    flex: 1 1 100%;
+    padding: 1.5rem;
+}    
+
+.footer-card-1 p {
+    color: var(--Dim-Gray);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.footer-card-2 ul li a {
+    color: var(--Dim-Gray);
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    text-decoration: none; 
+    
+}
+
+.footer-card-2 ul {
+    padding: 0px;  
+}
+
+.links-card-2 {
+    list-style: none;
+}
+
+.post-link {
+    display: inline-flex;         /* icono y texto alineados */
+    align-items: center; 
+    gap: 1rem;                 /*espaciado entre icono y links*/
+  
+}
 
 
-/* Media quieries break-point**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.links-card-2 i.fa-solid.fa-user-shield, i.fa-solid.fa-lock {
+    color: #FFFFFF;
+}
+
+.footer-card-3 ul li a {
+    color: var(--Dim-Gray);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-card-4 p {
+    color: var(--Dim-Gray);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.sections-footer h2 {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+
+}
+
+
+ /*Post-footer*/
+.post-footer {
+    background-color: #171717;
+    }
+
+.post-footer-bar {
+    color: var(--Dim-Gray);  
+    padding: 1.5rem;           
+}
+
+.post-footer-bar {
+    color: var(--Dim-Gray);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.post-footer-bar a {
+    color: var(--Halloween-Orange);
+    text-decoration: none;
+}
+
+/* Media quieries break-point*****************************************************************************************************/
 @media (width > 567px) {
     .container {
         max-width: 54rem;
@@ -176,10 +320,28 @@ div {
     /* Header */
     /* Main */
     /* Aside */
+
     /* Footer */
+    .sections-footer {
+        display: flex;
+        flex-wrap: wrap;       
+    }
+
+    .col {    
+        flex: 1 1 30%;       
+    }
+
+    .banner-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8.5rem;
+        flex-direction: row;
+    }
+
 }
 
-/* ************************************************************************************************************************** */
+/* ****************************************************************************************************************************/
 @media (width > 768px) { 
     .container {
         max-width: 72rem;
@@ -213,11 +375,59 @@ div {
 
     /* Main */
     /* Aside */
-    /* Footer */ 
-}
-  
+    /* Footer */
+    
 
-/* ************************************************************************************************************************** */
+    .sections-footer {
+        display: flex;
+        flex-wrap: wrap;        
+    }  
+
+    .col {    
+        flex: 1 1 25%;
+    }
+
+    .banner {
+        width: 100%;
+        height: 8.5rem;  
+        background: linear-gradient( /* Fondo dividido en diagonal */
+        55deg, 
+        var(--Halloween-Orange) 0%,
+        var(--Halloween-Orange) 50%,
+        #f4f4f4 50%,
+        #f4f4f4 100%
+        );  
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner-content {        
+        height: 8.5rem;        
+    }
+
+    .btn {
+        background: var(--Halloween-Orange);
+        color: #fff;
+        padding: 1rem 2rem;
+        font-size: 14px;
+        text-decoration: none;        
+        font-family: "Oswald", sans-serif;
+        
+    }
+
+    .btn:hover{
+        background-color: var(--Raisin-Black);
+        transition: all 1s;
+    }
+
+    .btn i.fa-regular.fa-file-pdf {
+        margin-right: 1rem;
+        font-size: 1.8rem; /*Altura a la imagen de pdf*/
+    }
+}      
+
+
+/* ***************************************************************************************************************************/
 @media (width > 1024px) {
     .container {
         max-width: 99.2rem;
@@ -338,22 +548,35 @@ div {
     /* Main */
     /* Aside */
     /* Footer */
-}
 
-/* ************************************************************************************************************************** */
+    .sections-footer {
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    
+    .col {    
+        flex: 1 1 20%;
+    }
+
+    
+}
+/* ***************************************************************************************************************************/
 @media (width > 1200px) {
     .container {
         max-width: 114rem;
         padding: 0 4rem;
     }
+
+}
+
+    
     /* Header */
     /* Main */
     /* Aside */
     /* Footer */
-}
+    
 
-
-/* ************************************************************************************************************************** */
+/* ***************************************************************************************************************************/
 @media (width > 1400px) {
     .container {
         max-width: 132rem;
@@ -365,7 +588,7 @@ div {
     /* Footer */
 }
 
-/* ************************************************************************************************************************** */
+/* ***************************************************************************************************************************/
 @media (width > 1600px) {
     .container {
         max-width: 144rem;
@@ -377,7 +600,7 @@ div {
     /* Footer */
 }
 
-/* ************************************************************************************************************************** */
+/* ***************************************************************************************************************************/
 @media (width > 1920px) {
     .container {
         max-width: 160rem;
