@@ -65,27 +65,58 @@ body {
 
 
 /*main-carousel-galery*/
+
+.section-gallery .container > h2:first-of-type {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 9rem 0 0 0;
+
+}
+
+
+.section-gallery .container > h2:nth-of-type(2) {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: #F26723;
+    text-align: center;
+    margin: 10px 0px 0px;
+    font-weight: 500;
+}
+
+.card-gallery img {
+  width: 100%;     /* ocupa todo el ancho del contenedor */
+  height: auto;    /* mantiene la proporción original */
+  display: block;  /* elimina espacio blanco debajo de la imagen */
+  border-radius: 0.5rem; /* opcional, esquinas redondeadas */
+}
+
+
+
 .carousel-gallery {
     display: flex;  
-    gap: 1rem;
+    gap: 3rem;
     flex-wrap: wrap;
     margin: 3rem auto;
     width: 100%;
+    justify-content: center;
+    width: 85%;
+    padding-bottom: 4rem;
 }
 
 .card {    
     flex: 1 1 46rem;
-    height: 18rem;
-    background-color: salmon;  
-    padding: 1rem; 
+    height: 21rem;
+    background-color: salmon;    
     border-radius: 0.5rem;  /*puntas redondeadas de la card*/
     text-align: center;
-    align-content: center;
+    align-content: center;    
+    
 }    
 
-
-
-/* Las cards ahora son enlaces; conserva tu estilo actual y añade: */
+.carousel-gallery .card{ display:none; }
+.carousel-gallery .card:first-child{ display:flex; } 
 
 
 .carousel-gallery .card:hover{
@@ -93,7 +124,6 @@ body {
   box-shadow: 0 12px 28px rgba(0,0,0,.16);
 }
 
-/* ===== Lightbox sólo CSS con :target ===== */
 .lightbox{
   position: fixed;
   inset: 0;
@@ -207,12 +237,12 @@ body {
     
 
     .card {
-        flex: 0 0 49rem;
-        height: 12rem;
+        flex: 0 0 42rem;
+        height: 28rem;
     }
 
-    .carousel-gallery .card{ display:none; }
-    .carousel-gallery .card:first-child{ display:flex; } 
+    
+    
 
     /* Aside */
     /* Footer */
@@ -228,9 +258,11 @@ body {
     /* Main */
     /*main-galley*/
     .card {
-        flex: 0 0 31rem;
-        height: 12rem;
+        flex: 0 0 26rem;
+        height: 18rem;
     }
+
+    .carousel-gallery .card{ display:flex; }
     /* Aside */
     /* Footer */ 
 }
@@ -244,6 +276,15 @@ body {
     }  
     /* Header */
     /* Main */
+    /*main-galley*/
+    .card {    
+        flex: 1 1 24rem;
+        height: 17rem;
+    }
+
+    .carousel-gallery .card{ display:flex; }
+
+
     /* Aside */
     /* Footer */
 }
@@ -256,6 +297,13 @@ body {
     }
     /* Header */
     /* Main */
+    /*main-galley*/
+    .card {    
+        flex: 1 1 27%;
+        height: 19rem;
+    }
+
+    .carousel-gallery .card{ display:flex; }
     /* Aside */
     /* Footer */
 }
@@ -269,6 +317,13 @@ body {
     }
     /* Header */
     /* Main */
+    /*main-galley*/
+    .card {    
+        flex: 1 1 31%;
+        height: 24rem;
+    }
+
+    .carousel-gallery .card{ display:flex; }
     /* Aside */
     /* Footer */
 }
@@ -281,6 +336,10 @@ body {
     }
     /* Header */
     /* Main */
+    /*main-galley*/
+    .card {            
+        height: 25rem;
+    }
     /* Aside */
     /* Footer */
 }
@@ -293,6 +352,10 @@ body {
     }
     /* Header */
     /* Main */
+    /*main-galley*/
+    .card {            
+        height: 27rem;
+    }
     /* Aside */
     /* Footer */
 }
