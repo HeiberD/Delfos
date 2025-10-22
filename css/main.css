@@ -89,8 +89,8 @@ div {
 }
 
 .header-main img {
-    /* width: 18vw; */
-    height: 8rem;
+    width: 50vw;
+    /* height: 8rem; */
 }
 
 .big-logo-mobile {
@@ -373,6 +373,10 @@ h3 {
     padding: 0 1.6rem;  /*Maneja la distancia entre el contenido y el borde del contenedor e incrementa en 8px en cada media query*/
 }
     /* Header */
+    .header-main img {
+        width: 30vw;
+        /* height: 8rem; */
+    }
     /* Main */
     /* Aside */
 
