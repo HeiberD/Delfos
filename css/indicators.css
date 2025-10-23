@@ -35,8 +35,13 @@
 
 /* Grid móvil - Una columna */
 .stats-grid {
+
+/* Estas lineas de codigo est n configurando un contenedor de 
+tipo grid, que tiene una columna de ancho igual 
+a la del contenedor padre (1fr). */
     display: grid;
     grid-template-columns: 1fr;
+
     gap: 15px;
     margin: 0 auto;
     max-width: 30rem;
@@ -84,7 +89,12 @@
     
     /* Grid de 2 columnas en tablet pequeño */
     .stats-grid {
+        /* El grid se divide en 2 columnas de ancho igual,
+           cada una con un ancho de 1 fracción (fracción es
+           una unidad de medida relativa que se ajusta automático al
+           ancho disponible en el contenedor) */
         grid-template-columns: repeat(2, 1fr);
+        /* Espaciado entre cada item del grid de 20px */
         gap: 20px;
     }
     
