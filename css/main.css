@@ -1,29 +1,38 @@
 @import url(./normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /*Titulos de color negro*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /*titulos naranjas*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*Titulos de color negro*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*titulos naranjas*/
 
 
 /* Variables globales */
 
 :root {
     /* Convierte 1rem en base 10 */
-    --over-font-size:62.5%;
+    --over-font-size: 62.5%;
 
     /* Colores base */
-    --Orange-Yellow:#F4B527;
+    --Orange-Yellow: #F4B527;
     --Halloween-Orange: #F26723;
     --Maximun-Red: #D12420;
     --Navy-Blue: #09097C;
-    --Raisin-Black: #212121; /*Background copyrigth y testimonials*/
-    --Lotion: #fcfcfd; /*Body*/
-    --Anti-Flash-White: #F3F3F3; /*Background our service*/
-    --Raisin-Black: #222222; /*Background footer principal*/
-    --Charleston-Green: #2b2b2b; /*Background testimonials y subscribe*/
-    --Dim-Gray: #636C72; /*Color letra footer*/
+    --Raisin-Black: #212121;
+    /*Background copyrigth y testimonials*/
+    --Lotion: #fcfcfd;
+    /*Body*/
+    --Anti-Flash-White: #F3F3F3;
+    /*Background our service*/
+    --Raisin-Black: #222222;
+    /*Background footer principal*/
+    --Charleston-Green: #2b2b2b;
+    /*Background testimonials y subscribe*/
+    --Dim-Gray: #636C72;
+    /*Color letra footer*/
 }
 
 html {
-    font-size: var(--over-font-size); /*pasa a base 10*/
+    font-size: var(--over-font-size);
+    /*pasa a base 10*/
 }
 
 html,
@@ -34,17 +43,30 @@ body {
 
 body {
     display: flex;
-    flex-direction: column; 
-    font-size: 1.6rem; /*todas las fuentes en base 10*/
+    flex-direction: column;
+    font-size: 1.6rem;
+    /*todas las fuentes en base 10*/
     background-color: white;
+}
+
+h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: var(--Halloween-Orange);
+    margin: 0px;
+    font-weight: 500;
 }
 
 .container {
     border: 1px dotted blue;
-    box-sizing: border-box;  /**Para bordes internos al elemento**/
-    margin: 0 auto;          /**Centra el elemento**/
-    max-width: 96vw;         /**Ancho maximo**/
-    padding: 0 .8rem;        /**Distancia entre el contenido y el borde**/    
+    box-sizing: border-box;
+    /**Para bordes internos al elemento**/
+    margin: 0 auto;
+    /**Centra el elemento**/
+    max-width: 96vw;
+    /**Ancho maximo**/
+    padding: 0 .8rem;
+    /**Distancia entre el contenido y el borde**/
 }
 
 .container-fluid {
@@ -57,31 +79,26 @@ body {
 
 /* Header */
 
-div {
-    /* border: 1px solid red; */
-}
-
 .header-diagonal {
-  /* background-color: white; */
+    /* background-color: white; */
 
-  /* El gradiente con el ángulo perfecto */
-  background: linear-gradient(-135deg, var(--Halloween-Orange) 100%, transparent 0% );
-  /* El gradiente tiene un ángulo de -135 grados, lo que significa que se va a dibujar desde arriba hacia abajo y desde la izquierda hacia la derecha. */
-  /* El gradiente empieza con el color var(--Orange-Yellow) en la posición 70% */
-  /* A partir de la posición 0%, el gradiente es transparente */
-  
-  border-top: var(--Halloween-Orange) .5rem solid;
-  /* color: white; */
-  height: 2rem;
-  /* min-height: 2rem; */
-  padding: 1.2rem 0 1.7rem 0;
+    /* El gradiente con el ángulo perfecto */
+    background: linear-gradient(-135deg, var(--Halloween-Orange) 100%, transparent 0%);
+    /* El gradiente tiene un ángulo de -135 grados, lo que significa que se va a dibujar desde arriba hacia abajo y desde la izquierda hacia la derecha. */
+    /* El gradiente empieza con el color var(--Orange-Yellow) en la posición 70% */
+    /* A partir de la posición 0%, el gradiente es transparente */
+
+    border-top: var(--Halloween-Orange) .5rem solid;
+    /* color: white; */
+    height: 2rem;
+    /* min-height: 2rem; */
+    padding: 1.2rem 0 1.7rem 0;
 }
 
 .header-main {
     /* border: 1px solid green; */
     /* border: 1px solid green; */
-    display: flex
-;
+    display: flex;
     /* flex-direction: row; */
     justify-content: center;
     /* padding: 0 0 0 6vw; */
@@ -111,6 +128,7 @@ div {
     /* height: 10rem; */
     /* transform: translateY(-3.8rem); Desplazamiento hacia arriba */
 }
+
 /* Para el contenido del header */
 .header-header {
     display: flex;
@@ -130,40 +148,250 @@ div {
 .header-header a {
     color: white;
     text-decoration: none;
-}   
+}
 
 .contact-info {
-  display: none;
-}
-
-.social-links {
-  /* flex: 1; */
-  /* text-align: center; */
-}
-
-.user-actions {
-  /* flex: 1; */
-  /* text-align: right; */
+    display: none;
 }
 
 .header-menu ul {
-    display: none;
-} 
+    display: flex;
+    gap: 4rem;
+    justify-content: flex-end;
+    margin: 1rem 0rem 1.6rem 0rem;
+}
+
+.header-menu li {
+    /* border: 1px solid red; */
+    list-style: none;
+}
+
+.header-menu a {
+    color: var(--Raisin-Black);
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-menu a:hover {
+    color: var(--Halloween-Orange);
+}
+
+
+
+
+
+
 
 /* Main */
 .main {
-    flex: 1; /*Es equivalente a 1 0 auto*/
+    flex: 1;
+    /*Es equivalente a 1 0 auto*/
 }
+
 
 
 
 /* Carousel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-    /* carousel.css */
+/* carousel.css */
 
-/*Section-news-various*/
-.news-various {
+
+
+
+/*main-carousel-galery*/
+
+.section-gallery .container>h2:first-of-type {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     text-align: center;
+    margin: 9rem 0 0 0;
+
+}
+
+
+.section-gallery .container>h2:nth-of-type(2) {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: #F26723;
+    text-align: center;
+    margin: 10px 0px 0px;
+    font-weight: 500;
+}
+
+.card-gallery img {
+    width: 100%;
+    /* ocupa todo el ancho del contenedor */
+    height: auto;
+    /* mantiene la proporción original */
+    display: block;
+    /* elimina espacio blanco debajo de la imagen */
+    border-radius: 0.5rem;
+    /* opcional, esquinas redondeadas */
+}
+
+.carousel-gallery {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+    width: 100%;
+    justify-content: center;
+    width: 85%;
+    padding-bottom: 4rem;
+}
+
+.card {
+    flex: 1 1 46rem;
+    height: 21rem;
+    background-color: salmon;
+    border-radius: 0.5rem;
+    /*puntas redondeadas de la card*/
+    text-align: center;
+    align-content: center;
+
+}
+
+.carousel-gallery .card {
+    display: none;
+}
+
+.carousel-gallery .card:first-child {
+    display: flex;
+}
+
+
+.carousel-gallery .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .16);
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    /* Flex centrar */
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    opacity: 0;
+    /* oculto por defecto */
+    pointer-events: none;
+    transition: opacity .25s ease;
+    z-index: 1000;
+}
+
+/* Fondo oscuro detrás de la imagen */
+.lightbox::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .65);
+    backdrop-filter: blur(2px);
+}
+
+/* Imagen ampliada (efecto “agrandar un poco”) */
+.lightbox img {
+    max-width: min(90vw, 1200px);
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+    transform: scale(0.96);
+    transition: transform .25s ease;
+}
+
+/* Se muestra cuando el hash apunta a #slideN */
+.lightbox:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightbox:target img {
+    transform: scale(1.0);
+}
+
+/* ===== Navegación izquierda/derecha ===== */
+.lightbox .nav {
+    position: absolute;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
+    cursor: pointer;
+}
+
+.lightbox .nav:hover {
+    background: #fff;
+}
+
+.lightbox .nav:focus-visible {
+    outline: 2px solid dodgerblue;
+}
+
+.lightbox .prev {
+    left: 24px;
+}
+
+.lightbox .next {
+    right: 24px;
+}
+
+/* Flechas con pseudoelementos */
+.lightbox .prev::after,
+.lightbox .next::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid #111;
+    border-right: 3px solid #111;
+}
+
+.lightbox .prev::after {
+    transform: rotate(-135deg);
+}
+
+.lightbox .next::after {
+    transform: rotate(45deg);
+}
+
+/* ===== Botón cerrar (X) ===== */
+.lightbox .close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lightbox .close:hover {
+    background: #fff;
+}
+
+.lightbox .close:focus-visible {
+    outline: 2px solid dodgerblue;
+}
+
+.lightbox .close::after {
+    content: "✕";
+    font-size: 18px;
+    line-height: 1;
+    color: #111;
 }
 
 .news-various h2 {
@@ -187,10 +415,15 @@ div {
     font-size: 20px;
     text-decoration: none;
     display: block;
-    padding: 2rem;  
+    padding: 2rem;
     color: #171717;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
-    
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+/*Section-news-various*/
+.news-various {
+    text-align: center;
 }
 
 .news-various-cards {
@@ -199,6 +432,7 @@ div {
     gap: 2rem;
     margin-top: 3rem;
     margin-bottom: 9rem;
+    justify-content: center;
 }
 
 .news-card-1,
@@ -209,13 +443,7 @@ img {
     display: block;
 }
 
-h3 {
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-    color: var(--Halloween-Orange);
-    margin: 0px;
-    font-weight: 500;
-}
+
 
 /*pre-footer*/
 
@@ -224,11 +452,11 @@ h3 {
     /* height: 11rem;    */
     background: var(--Halloween-Orange);
     align-items: center;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
 .banner-content {
-    display: flex;    
+    display: flex;
     align-items: center;
     height: 12rem;
     flex-direction: column;
@@ -239,19 +467,21 @@ h3 {
     color: #fff;
     padding: 1rem 2rem;
     font-size: 14px;
-    text-decoration: none;    
-    font-family: "Oswald", sans-serif;    
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: var(--Dim-Gray);
     transition: all 1s;
-    }
+}
 
-.btn i.fa-regular.fa-file-pdf { /*Logo pdf*/
+.btn i.fa-regular.fa-file-pdf {
+    /*Logo pdf*/
     margin-right: 1rem;
-    font-size: 1.8rem;         /*Altura de la imagen logo pdf*/
-    }
+    font-size: 1.8rem;
+    /*Altura de la imagen logo pdf*/
+}
 
 .btn i.fa-solid.fa-circle-down {
     margin-left: 0.8rem;
@@ -264,30 +494,31 @@ h3 {
 }
 
 .pre-footer {
-    border-bottom: 3px solid var(--Halloween-Orange); /*borde naranja a la seccion pre-footer*/
+    border-bottom: 3px solid var(--Halloween-Orange);
+    /*borde naranja a la seccion pre-footer*/
 }
 
-/* Aside */
+
 
 /* Footer ******************/
 
 .footer__background {
-    background-color:var(--Raisin-Black);
-    
+    background-color: var(--Raisin-Black);
+
 }
 
 .sections-footer {
     display: flex;
-    flex-wrap: wrap;  
-    gap: 1rem;  
-    margin: 3rem 0;      
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 3rem 0;
 }
 
 .col {
     border: dotted blueviolet;
     flex: 1 1 100%;
     padding: 1.5rem;
-}    
+}
 
 .footer-card-1 p {
     color: var(--Dim-Gray);
@@ -299,11 +530,11 @@ h3 {
     color: var(--Dim-Gray);
     font-family: "Roboto", sans-serif;
     font-size: 15px;
-    text-decoration: none;     
+    text-decoration: none;
 }
 
 .footer-card-2 ul {
-    padding: 0px;  
+    padding: 0px;
 }
 
 .links-card-2 {
@@ -311,15 +542,18 @@ h3 {
 }
 
 .post-link {
-    display: inline-flex;         /* icono y texto alineados */
-    align-items: center; 
-    gap: 1rem;                 /*espaciado entre icono y links*/
-  
+    display: inline-flex;
+    /* icono y texto alineados */
+    align-items: center;
+    gap: 1rem;
+    /*espaciado entre icono y links*/
+
 }
 
 
-.links-card-2 i.fa-solid.fa-user-shield, i.fa-solid.fa-lock {
-    color: #FFFFFF;    
+.links-card-2 i.fa-solid.fa-user-shield,
+i.fa-solid.fa-lock {
+    color: #FFFFFF;
 }
 
 
@@ -344,14 +578,14 @@ h3 {
 }
 
 
- /*Post-footer*/
+/*Post-footer*/
 .post-footer {
     background-color: #171717;
-    }
+}
 
 .post-footer-bar {
-    color: var(--Dim-Gray);  
-    padding: 1.5rem;           
+    color: var(--Dim-Gray);
+    padding: 1.5rem;
 }
 
 .post-footer-bar {
@@ -367,36 +601,41 @@ h3 {
 }
 
 /* Media quieries break-point*****************************************************************************************************/
+
+
 @media (width > 567px) {
-.container {
-    max-width: 54rem;
-    padding: 0 1.6rem;  /*Maneja la distancia entre el contenido y el borde del contenedor e incrementa en 8px en cada media query*/
-}
+    .container {
+        max-width: 54rem;
+        padding: 0 1.6rem;
+        /*Maneja la distancia entre el contenido y el borde del contenedor e incrementa en 8px en cada media query*/
+    }
+
     /* Header */
     .header-main img {
         width: 30vw;
         /* height: 8rem; */
     }
-    /* Main */
-    /* Aside */
 
+    /*main-galley*/
+    .card {
+        flex: 0 0 42rem;
+        height: 28rem;
+    }
 
- /*main feature-news-various*/
-.links-card-2 i.fa-solid.fa-lock {
-    margin-left: 0.4rem;
-    margin-right: 0.2rem;
-}
-
-
+    /*main feature-news-various*/
+    .links-card-2 i.fa-solid.fa-lock {
+        margin-left: 0.4rem;
+        margin-right: 0.2rem;
+    }
 
     /* Footer */
     .sections-footer {
         display: flex;
-        flex-wrap: wrap;       
+        flex-wrap: wrap;
     }
 
-    .col {    
-        flex: 1 1 30%;       
+    .col {
+        flex: 1 1 30%;
     }
 
     .banner-content {
@@ -410,18 +649,161 @@ h3 {
 }
 
 /* ****************************************************************************************************************************/
-@media (width > 768px) { 
+@media (width > 768px) {
     .container {
         max-width: 72rem;
         padding: 0 2.4rem;
-    }     
-    /* Header */
+    }
+
+    .news-various-cards {   
+        flex-direction: row;   
+    }
+
+    /*main-galley*/
+    .card {
+        flex: 0 0 26rem;
+        height: 18rem;
+    }
+
+    .carousel-gallery .card {
+        display: flex;
+    }
+
+    /* Footer */
+    .sections-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex: 1 1 25%;
+    }
+
+    .banner {
+        width: 100%;
+        height: 8.5rem;
+        background: linear-gradient(
+                /* Fondo dividido en diagonal */
+                55deg,
+                var(--Halloween-Orange) 0%,
+                var(--Halloween-Orange) 50%,
+                #f4f4f4 50%,
+                #f4f4f4 100%);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner-content {
+        height: 8.5rem;
+    }
+
+    .btn {
+        background: var(--Halloween-Orange);
+        color: #fff;
+        padding: 1rem 2rem;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: "Oswald", sans-serif;
+
+    }
+
+    .btn:hover {
+        background-color: var(--Raisin-Black);
+        transition: all 1s;
+    }
+
+    .btn i.fa-regular.fa-file-pdf {
+        margin-right: 1rem;
+        font-size: 1.8rem;
+        /*Altura a la imagen de pdf*/
+    }
+}
+
+
+/* ***************************************************************************************************************************/
+@media (width > 1024px) {
+    .container {
+        max-width: 99.2rem;
+        padding: 0 3.2rem;
+    }
+
+    .header-diagonal {
+        /* background-color: white; */
+
+        /* El gradiente con el ángulo perfecto */
+        background: linear-gradient(-135deg, var(--Halloween-Orange) 70%, transparent 0%);
+        /* El gradiente tiene un ángulo de -135 grados, lo que significa que se va a dibujar desde arriba hacia abajo y desde la izquierda hacia la derecha. */
+        /* El gradiente empieza con el color var(--Orange-Yellow) en la posición 70% */
+        /* A partir de la posición 0%, el gradiente es transparente */
+
+        border-top: var(--Halloween-Orange) .5rem solid;
+        /* color: white; */
+        height: 2rem;
+        /* min-height: 2rem; */
+        padding: 1.2rem 0 1.7rem 0;
+    }
+
+    .header-main {
+        /* border: 1px solid green; */
+        /* border: 1px solid green; */
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        /* padding: 0 0 0 6vw; */
+        transform: translateY(-3.8rem);
+    }
+
+    .header-main img {
+        width: 18vw;
+        height: unset;
+    }
+
+    .big-logo-mobile {
+        display: none;
+    }
+
+    .big-logo {
+        display: block;
+    }
+
+    .header-container {
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        height: 10rem;
+        /* transform: translateY(-3.8rem); Desplazamiento hacia arriba */
+    }
+
+    /* Para el contenido del header */
+    .header-header {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.4rem;
+    }
+
+    .header-header span {
+        color: white;
+    }
+
+    .header-header i {
+        color: white;
+    }
+
+    .header-header a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .contact-info {
+        display: flex;
+    }
 
     .header-menu ul {
         display: flex;
         gap: 4rem;
         justify-content: flex-end;
-        margin: 1rem 0rem 1.6rem 0rem;
+        margin: 3.2rem 0rem 1.6rem 0rem;
     }
 
     .header-menu li {
@@ -442,206 +824,26 @@ h3 {
     }
 
     /* Main */
+    /*main-galley*/
+    .card {
+        flex: 1 1 24rem;
+        height: 17rem;
+    }
 
-    /*main feature-news-various*/
-    .news-various-cards {
+    .carousel-gallery .card {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;       
-        
     }
-
-    .news {
-        max-width: 40rem;        
-        width: 100%;
-    }
-
-    
-
-    /* Aside */
-    /* Footer */    
-    .sections-footer {
-        display: flex;
-        flex-wrap: wrap;        
-    }  
-
-    .col {    
-        flex: 1 1 25%;
-    }
-
-    .banner {
-        width: 100%;
-        height: 8.5rem;  
-        background: linear-gradient( /* Fondo dividido en diagonal */
-        55deg, 
-        var(--Halloween-Orange) 0%,
-        var(--Halloween-Orange) 50%,
-        #f4f4f4 50%,
-        #f4f4f4 100%
-        );  
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .banner-content {        
-        height: 8.5rem;        
-    }
-
-    .btn {
-        background: var(--Halloween-Orange);
-        color: #fff;
-        padding: 1rem 2rem;
-        font-size: 14px;
-        text-decoration: none;        
-        font-family: "Oswald", sans-serif;
-        
-    }
-
-    .btn:hover{
-        background-color: var(--Raisin-Black);
-        transition: all 1s;
-    }
-
-    .btn i.fa-regular.fa-file-pdf {
-        margin-right: 1rem;
-        font-size: 1.8rem; /*Altura a la imagen de pdf*/
-    }
-}      
-
-
-/* ***************************************************************************************************************************/
-@media (width > 1024px) {
-    .container {
-        max-width: 99.2rem;
-        padding: 0 3.2rem;
-    }  
-    /* Header */
-
-    div {
-    /* border: 1px solid red; */
-}
-
-.header-diagonal {
-  /* background-color: white; */
-
-  /* El gradiente con el ángulo perfecto */
-  background: linear-gradient(-135deg, var(--Halloween-Orange) 70%, transparent 0% );
-  /* El gradiente tiene un ángulo de -135 grados, lo que significa que se va a dibujar desde arriba hacia abajo y desde la izquierda hacia la derecha. */
-  /* El gradiente empieza con el color var(--Orange-Yellow) en la posición 70% */
-  /* A partir de la posición 0%, el gradiente es transparente */
-  
-  border-top: var(--Halloween-Orange) .5rem solid;
-  /* color: white; */
-  height: 2rem;
-  /* min-height: 2rem; */
-  padding: 1.2rem 0 1.7rem 0;
-}
-
-.header-main {
-/* border: 1px solid green; */
-    /* border: 1px solid green; */
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-    /* padding: 0 0 0 6vw; */
-    transform: translateY(-3.8rem);
-}
-
-.header-main img {
-    width: 18vw;
-    height: unset;
-}
-
-.big-logo-mobile {
-    display: none;
-}
-
-.big-logo {
-    display: block;
-}
-
-.header-container {
-    /* border: 2px solid green; */
-    display: flex;
-    flex-direction: column;
-    height: 10rem;
-    /* transform: translateY(-3.8rem); Desplazamiento hacia arriba */
-}
-/* Para el contenido del header */
-.header-header {
-    display: flex;
-    justify-content: space-between;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.4rem;
-}
-
-.header-header span {
-    color: white;
-}
-
-.header-header i {
-    color: white;
-}
-
-.header-header a {
-    color: white;
-    text-decoration: none;
-}   
-
-.contact-info {
-  display: flex;
-}
-
-.social-links {
-  /* flex: 1; */
-  /* text-align: center; */
-}
-
-.user-actions {
-  /* flex: 1; */
-  /* text-align: right; */
-}
-
-.header-menu ul {
-    display: flex;
-    gap: 4rem;
-    justify-content: flex-end;
-    margin: 3.2rem 0rem 1.6rem 0rem;
-}
-
-
-.header-menu li {
-    /* border: 1px solid red; */
-    list-style: none;
-}
-
-.header-menu a {
-    color: var(--Raisin-Black);
-    font-family: "Oswald", sans-serif;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.header-menu a:hover {
-    color: var(--Halloween-Orange);
-}
-
-    /* Main */
-    /* Aside */
-    /* Footer */
 
     .sections-footer {
         display: flex;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
     }
-    
-    .col {    
+
+    .col {
         flex: 1 1 20%;
     }
-
-    
 }
+
 /* ***************************************************************************************************************************/
 @media (width > 1200px) {
     .container {
@@ -649,14 +851,18 @@ h3 {
         padding: 0 4rem;
     }
 
+    /*main-galley*/
+    .card {
+        flex: 1 1 27%;
+        height: 19rem;
+    }
+
+    .carousel-gallery .card {
+        display: flex;
+    }
+
 }
 
-    
-    /* Header */
-    /* Main */
-    /* Aside */
-    /* Footer */
-    
 
 /* ***************************************************************************************************************************/
 @media (width > 1400px) {
@@ -664,10 +870,16 @@ h3 {
         max-width: 132rem;
         padding: 0 4.8rem;
     }
-    /* Header */
-    /* Main */
-    /* Aside */
-    /* Footer */
+
+     /*main-galley*/
+    .card {
+        flex: 1 1 31%;
+        height: 24rem;
+    }
+
+    .carousel-gallery .card {
+        display: flex;
+    }    
 }
 
 /* ***************************************************************************************************************************/
@@ -676,10 +888,12 @@ h3 {
         max-width: 144rem;
         padding: 0 5.6rem;
     }
-    /* Header */
-    /* Main */
-    /* Aside */
-    /* Footer */
+    
+    /*main-galley*/
+    .card {
+        height: 25rem;
+    }
+    
 }
 
 /* ***************************************************************************************************************************/
@@ -687,9 +901,10 @@ h3 {
     .container {
         max-width: 160rem;
         padding: 0 6.4rem;
+    }   
+    /*main-galley*/
+    .card {
+        height: 27rem;
     }
-    /* Header */
-    /* Main */
-    /* Aside */
-    /* Footer */
+    
 }
