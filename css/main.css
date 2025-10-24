@@ -191,12 +191,90 @@ h3 {
 }
 
 
-
-
 /* Carousel +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /* carousel.css */
 
+/*Main Our-Services*/
+.section-our-services .container> h2:first-child {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 9rem 0 0 0;
+}
+
+.section-our-services .container> h2:nth-of-type(2) {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: #F26723;
+    text-align: center; 
+    margin-top: 1rem;
+}
+
+.cards-service {
+    border: 1px dotted blueviolet;
+    background-color: #f3f3f3;
+    margin-top: 7rem;
+}
+
+.card-service-1 {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    border-top: none;
+}
+
+.card-service-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;  
+    width: 140px;                     /* controla el largo de la línea */
+    border-top: 4px solid #F26723;    /* grosor y color */
+}
+
+.card-service-1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;  
+  height: 140px;                     /* controla el largo de la línea */
+  border-left: 4px solid #F26723;    /* grosor y color */
+}
+
+
+.card-service-1 .fa-circle,
+.card-service-1 .fa-house-lock {
+  position: absolute;
+  top: 0px; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-service-1 .fa-circle {
+  font-size: 80px; 
+  color: #F3F3F3; 
+  z-index: 1;
+}
+
+.card-service-1 .fa-house-lock {
+    font-size: 30px; 
+    color: #F26723; 
+    z-index: 2;
+}
+
+.cards-service h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin-top: 4rem;
+}
+
+.cards-service p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color:var(--Charleston-Green)
+}
 
 
 
