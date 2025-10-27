@@ -179,11 +179,6 @@ h3 {
 }
 
 
-
-
-
-
-
 /* Main */
 .main {
     flex: 1;
@@ -196,7 +191,7 @@ h3 {
 /* carousel.css */
 
 /*Main Our-Services*/
-.section-our-services .container> h2:first-child {
+.section-our-services .container>h2:first-child {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -204,76 +199,100 @@ h3 {
     margin: 9rem 0 0 0;
 }
 
-.section-our-services .container> h2:nth-of-type(2) {
+.section-our-services .container>h2:nth-of-type(2) {
     font-family: "Oswald", sans-serif;
     font-size: 30px;
     color: #F26723;
-    text-align: center; 
+    text-align: center;
     margin-top: 1rem;
 }
 
-.cards-service {
-    border: 1px dotted blueviolet;
-    background-color: #f3f3f3;
-    margin-top: 7rem;
-}
+.our-services {
 
-.card-service-1 {
-    position: relative;
-    text-align: center;
-    padding: 1rem;
-    border-top: none;
-}
-
-.card-service-1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;  
-    width: 140px;                     /* controla el largo de la línea */
-    border-top: 4px solid #F26723;    /* grosor y color */
-}
-
-.card-service-1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;  
-  height: 140px;                     /* controla el largo de la línea */
-  border-left: 4px solid #F26723;    /* grosor y color */
-}
+    .cards-service {
+        /* border: 1px dotted blueviolet; */
+        margin-top: 7rem;
+        gap: 8rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 9rem;
+    }
 
 
-.card-service-1 .fa-circle,
-.card-service-1 .fa-house-lock {
-  position: absolute;
-  top: 0px; 
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+    .card-service-1 {
+        position: relative;
+        text-align: center;
+        padding: 1rem;
+        border-top: none;
+        background-color: #f3f3f3;
+    }
 
-.card-service-1 .fa-circle {
-  font-size: 80px; 
-  color: #F3F3F3; 
-  z-index: 1;
-}
+    .card-service-1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        /* controla el largo de la línea */
+        border-top: 4px solid #F26723;
+        /* grosor y color */
+    }
 
-.card-service-1 .fa-house-lock {
-    font-size: 30px; 
-    color: #F26723; 
-    z-index: 2;
-}
+    .card-service-1::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        /* controla el largo de la línea */
+        border-left: 4px solid #F26723;
+        /* grosor y color */
+    }
 
-.cards-service h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    margin-top: 4rem;
-}
 
-.cards-service p {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    color:var(--Charleston-Green)
+    .card-service-1 .fa-circle,
+    .card-service-1 .fa-house-lock,
+    .card-service-1 .fa-camera,
+    .card-service-1 .fa-lock,
+    .card-service-1 .fa-computer,
+    .card-service-1 .fa-person-military-pointing,
+    .card-service-1 .fa-fingerprint {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card-service-1 .fa-circle {
+        font-size: 80px;
+        color: #F3F3F3;
+        z-index: 1;
+    }
+
+    .card-service-1 .fa-house-lock,
+    .card-service-1 .fa-camera,
+    .card-service-1 .fa-lock,
+    .card-service-1 .fa-computer,
+    .card-service-1 .fa-person-military-pointing,
+    .card-service-1 .fa-fingerprint {
+        font-size: 30px;
+        color: #F26723;
+        z-index: 2;
+    }
+
+    .cards-service h3 {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        margin-top: 4rem;
+        color: var(--Raisin-Black);
+    }
+
+    .cards-service p {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        color: var(--Charleston-Green)
+    }
+
 }
 
 
@@ -499,6 +518,7 @@ h3 {
 
 }
 
+
 /*Section-news-various*/
 .news-various {
     text-align: center;
@@ -521,10 +541,7 @@ img {
     display: block;
 }
 
-
-
 /*pre-footer*/
-
 .banner {
     width: 100%;
     /* height: 11rem;    */
@@ -577,7 +594,6 @@ img {
 }
 
 
-
 /* Footer ******************/
 
 .footer__background {
@@ -625,15 +641,12 @@ img {
     align-items: center;
     gap: 1rem;
     /*espaciado entre icono y links*/
-
 }
-
 
 .links-card-2 i.fa-solid.fa-user-shield,
 i.fa-solid.fa-lock {
     color: #FFFFFF;
 }
-
 
 .footer-card-3 ul li a {
     color: var(--Dim-Gray);
@@ -652,7 +665,6 @@ i.fa-solid.fa-lock {
     color: #FFFFFF;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-
 }
 
 
@@ -694,6 +706,8 @@ i.fa-solid.fa-lock {
         /* height: 8rem; */
     }
 
+
+
     /*main-galley*/
     .card {
         flex: 0 0 42rem;
@@ -733,11 +747,19 @@ i.fa-solid.fa-lock {
         padding: 0 2.4rem;
     }
 
-    .news-various-cards {   
-        flex-direction: row;   
+    /*main-our-service*/
+
+    .our-services {
+        .cards-service {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     /*main-galley*/
+    .news-various-cards {
+        flex-direction: row;
+    }
+
     .card {
         flex: 0 0 26rem;
         height: 18rem;
@@ -949,7 +971,7 @@ i.fa-solid.fa-lock {
         padding: 0 4.8rem;
     }
 
-     /*main-galley*/
+    /*main-galley*/
     .card {
         flex: 1 1 31%;
         height: 24rem;
@@ -957,7 +979,7 @@ i.fa-solid.fa-lock {
 
     .carousel-gallery .card {
         display: flex;
-    }    
+    }
 }
 
 /* ***************************************************************************************************************************/
@@ -966,12 +988,12 @@ i.fa-solid.fa-lock {
         max-width: 144rem;
         padding: 0 5.6rem;
     }
-    
+
     /*main-galley*/
     .card {
         height: 25rem;
     }
-    
+
 }
 
 /* ***************************************************************************************************************************/
@@ -979,10 +1001,11 @@ i.fa-solid.fa-lock {
     .container {
         max-width: 160rem;
         padding: 0 6.4rem;
-    }   
+    }
+
     /*main-galley*/
     .card {
         height: 27rem;
     }
-    
+
 }
