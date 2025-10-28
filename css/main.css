@@ -588,12 +588,6 @@ img {
     font-size: 20px;
 }
 
-.pre-footer {
-    border-bottom: 3px solid var(--Halloween-Orange);
-    /*borde naranja a la seccion pre-footer*/
-}
-
-
 /* Footer ******************/
 
 .footer__background {
@@ -791,10 +785,20 @@ i.fa-solid.fa-lock {
                 #f4f4f4 100%);
         align-items: center;
         justify-content: space-between;
+        position: relative; 
     }
 
-    .banner-content {
-        height: 8.5rem;
+    .banner-content {        
+        height: 8.5rem; 
+    }
+
+    .banner-content::before {
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid #F4F4F4;
+        right: 0;
+        bottom: 0;
+        width: 53%;
     }
 
     .btn {
@@ -817,7 +821,12 @@ i.fa-solid.fa-lock {
         font-size: 1.8rem;
         /*Altura a la imagen de pdf*/
     }
-}
+
+    .pre-footer {
+    border-bottom: 3px solid var(--Halloween-Orange); /*borde naranja a la seccion pre-footer*/
+    }
+}      
+
 
 
 /* ***************************************************************************************************************************/
