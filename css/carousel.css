@@ -1,6 +1,23 @@
 /* .container-carousel {
     padding: 0;
 } */
+ 
+/* 
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+.group {
+    display: flex;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+} */
 
 .carousel {
     anchor-name: --carousel;
