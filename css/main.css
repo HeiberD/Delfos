@@ -58,7 +58,7 @@ h3 {
 }
 
 .container {
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
     box-sizing: border-box;
     /**Para bordes internos al elemento**/
     margin: 0 auto;
@@ -603,7 +603,7 @@ img {
 }
 
 .col {
-    border: dotted blueviolet;
+    /* border: dotted blueviolet; */
     flex: 1 1 100%;
     padding: 1.5rem;
 }
@@ -627,6 +627,7 @@ img {
 
 .links-card-2 {
     list-style: none;
+    margin-top: 1rem;
 }
 
 .post-link {
@@ -710,8 +711,7 @@ i.fa-solid.fa-lock {
 
     /*main feature-news-various*/
     .links-card-2 i.fa-solid.fa-lock {
-        margin-left: 0.4rem;
-        margin-right: 0.2rem;
+        margin-left: 0.4rem;        
     }
 
     /* Footer */

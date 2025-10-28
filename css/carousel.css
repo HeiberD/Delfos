@@ -1,6 +1,23 @@
 /* .container-carousel {
     padding: 0;
 } */
+ 
+/* 
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+.group {
+    display: flex;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+} */
 
 .carousel {
     anchor-name: --carousel;
@@ -77,6 +94,7 @@
         /* padding: 1em; */
         scroll-snap-align: start;
         text-align: center;
+        height: 100%;
 
         &::scroll-marker{
         content: "";
@@ -129,7 +147,7 @@
             }
 
             .slide-text {
-                font-size: 1.2rem;
+                font-size: 1.8rem;
                 /* margin-bottom: 2.5rem; */
                 /* line-height: 1.6; */
                 text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
